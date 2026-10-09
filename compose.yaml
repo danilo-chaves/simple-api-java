@@ -26,7 +26,7 @@ services:
         condition: service_healthy
     environment:
       - PROFILE=dev  # Define o perfil da aplicação
-      - DATABASE_URL=jdbc:mysql://db:3306/api?createDatabaseIfNotExist=true  # URL de conexão com o banco
+      - DATABASE_URL=jdbc:mysql://db-fiap-on-api-dev.mysql.database.azure.com:3306/api?createDatabaseIfNotExist=true  # URL de conexão com o banco
       - DATABASE_USER=root  # Usuário do banco
       - DATABASE_PWD=root_pass  # Senha do banco
 
